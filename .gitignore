@@ -1,0 +1,23 @@
+# OS / editor cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# Local tooling
+.vscode/
+.idea/
+.claude/
+
+# Never publish the source decks or the raw image drops — they live outside this
+# folder, but this guards against them being copied in by mistake.
+*.pptx
+*.potx
+ERK*.pdf
+newphotos/
+new-images/
+
+# Local handover notes — never publish
+NOTES-private.md

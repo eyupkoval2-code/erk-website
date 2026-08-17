@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="4" fill="#0a0c0f"/>
+  <text x="16" y="16" fill="#cdf24a"
+        font-family="'IBM Plex Sans', system-ui, 'Segoe UI', Arial, sans-serif"
+        font-size="12.5" font-weight="700" letter-spacing="-0.4"
+        text-anchor="middle" dominant-baseline="central">ERK</text>
+</svg>
