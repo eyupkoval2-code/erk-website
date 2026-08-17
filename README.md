@@ -29,9 +29,20 @@ npx serve website
 
 ## Deploying
 
-The site is fully static. Drag the `website` folder onto Netlify Drop, or push it to a
-repository and point Vercel / Cloudflare Pages / GitHub Pages at it. No build command
-and no environment variables are required.
+Live: **https://erkdefense.com/** — GitHub Pages, `main` branch, repository root.
+The github.io address (`https://eyupkoval2-code.github.io/erk-website/`) also serves
+the site.
+
+**`CNAME` is part of the repository and must stay there.** It holds the custom domain.
+GitHub writes it when the domain is set in Settings → Pages; if a local push does not
+include it, the custom domain is removed and the site drops back to github.io. Pull
+before pushing if the domain was changed through the GitHub UI.
+
+Cloudflare sits in front of the domain with the proxy enabled. Consequence: GitHub
+cannot complete its own certificate validation, so `https_enforced` cannot be turned
+on and HTTP does not redirect to HTTPS on the GitHub side. Visitors get Cloudflare's
+certificate instead. Turning the proxy off (grey cloud) lets GitHub issue its own
+certificate and handle both the redirect and the www variant automatically.
 
 ## Deliberate technical choices
 

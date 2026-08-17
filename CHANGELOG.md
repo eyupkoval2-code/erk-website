@@ -2,6 +2,17 @@
 
 Semantic versioning. Newest first. See `CLAUDE.md` for the commit and version workflow.
 
+## 1.2.1 — 2026-08-17
+
+### Deployment
+- Published. Repository made public, GitHub Pages enabled on `main` at the root, custom
+  domain **erkdefense.com** attached. `CNAME` is now tracked in the repository.
+- `https_enforced` cannot be enabled: Cloudflare proxies the domain, so GitHub cannot
+  complete certificate validation. Visitors are served Cloudflare's certificate, and
+  HTTP does not redirect to HTTPS. `www.erkdefense.com` returns GitHub's 404 for the
+  same reason — GitHub only answers for the exact configured host. Both are fixed by
+  turning the Cloudflare proxy off, or by handling redirect and SSL on Cloudflare.
+
 ## 1.2.0 — 2026-08-17
 
 ### Changed
