@@ -2,6 +2,23 @@
 
 Semantic versioning. Newest first. See `CLAUDE.md` for the commit and version workflow.
 
+## 1.3.0 — 2026-08-17
+
+### Removed
+- **The Electronic Warfare page is gone.** `erk-ew.html` deleted along with its five
+  images (`ew-hardware.jpg`, `ew-uav.jpg`, `threat-*.png`). With it went the operational
+  record section and the threat-assessment illustrations.
+- Every reference removed: primary navigation and both footer columns on all four
+  remaining pages, the ERK EW product card on the home page, the "System of interest"
+  option on the contact form, and the cross-link at the foot of the Systems page.
+
+### Changed
+- Home page now reads "Four platforms, built to work together".
+- The first capability-domain card is ERK SHIELD alone again; its copy no longer
+  references the strategic EW layer.
+- The ecosystem "Neutralise" row no longer mentions wide-area GNSS denial.
+- Systems page CTA points at the ecosystem section instead of the EW page.
+
 ## 1.2.1 — 2026-08-17
 
 ### Deployment

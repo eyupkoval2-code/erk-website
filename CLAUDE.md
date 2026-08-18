@@ -4,8 +4,10 @@ Static marketing site for ERK Defense (electronic warfare, counter-drone, signal
 intelligence, tactical communications). Plain HTML, CSS and vanilla JavaScript.
 No build step, no framework, no package manager.
 
-Repository: `https://github.com/eyupkoval2-code/erk-website` (private)
-Live: GitHub Pages, `main` branch, `/` root.
+Repository: `https://github.com/eyupkoval2-code/erk-website` (public)
+Live: **https://erkdefense.com/** — GitHub Pages, `main` branch, `/` root.
+`CNAME` holds the custom domain and must stay in the repository; a push without it
+drops the site back to the github.io address.
 
 ---
 
@@ -44,7 +46,6 @@ file — this repo is pushed to GitHub and anything committed goes with it.
 ```
 index.html            Home — capability domains, product grid, ecosystem, production
 systems.html          SHIELD / TRACE / WATCH / GRID on one page (#shield … #grid)
-erk-ew.html           Strategic electronic warfare / GNSS denial
 intelligence.html     Intelligence Suite — OSINT / image search / ADINT (noindex)
 contact.html          Enquiry form + direct contact
 robots.txt
@@ -55,7 +56,7 @@ assets/img/
 ```
 
 Header and footer markup is duplicated per page — there is no templating. **A change to
-the nav or footer must be applied to all five pages.** Scripted find-and-replace across
+the nav or footer must be applied to all four pages.** Scripted find-and-replace across
 `*.html` is the practical way; always print a per-file confirmation count afterwards.
 
 ## Hard rules
@@ -113,10 +114,13 @@ sub-nav scroll-spy is geometry-based instead. Do not "fix" it back to an observe
 
 ## Content provenance
 
-Copy comes from three decks kept outside this repo (`../ERK EW`,
-`../ERK_Defense_Marketing_Deck`, `../ERK_Intelligence_Suite`). The marketing deck is the
-reference for wording. Deliberate departures from it, and the material held back, are
-documented in `README.md` — read that section before "correcting" anything to match a deck.
+Copy comes from decks kept outside this repo. The marketing deck is the reference for
+wording. Deliberate departures from it, and the material held back, are documented in
+`NOTES-private.md` — which is gitignored, because this repository is public. Read it
+before "correcting" anything to match a deck.
+
+The Electronic Warfare page (`erk-ew.html`) was removed at the customer's request in
+1.3.0, along with its images. The EW deck is still on disk if it is ever wanted back.
 
 ## Known gaps
 

@@ -9,7 +9,6 @@ JavaScript — no build step, no framework, no external requests.
 website/
 ├── index.html            Home — capability domains, product grid, ecosystem, production
 ├── systems.html          SHIELD, TRACE, WATCH and GRID on one page (#shield … #grid)
-├── erk-ew.html           Strategic electronic warfare / GNSS denial
 ├── intelligence.html     Intelligence Suite — capability level only, noindex
 ├── contact.html          Enquiry form + direct contact
 ├── robots.txt
